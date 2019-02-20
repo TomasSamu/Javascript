@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="wrap">
+            <div class="stations">
+                <p>Stations:</p>
+                <ul class="stationList">
+<!--                     <li>Praha</li>
+                    <li>Jihlava</li>
+                    <li>Brno</li>
+                    <li>Breclav</li>
+                    <li>Viden</li> -->
+                </ul>
+            </div>
+
+            <div class="currentStation">
+                <p>Current Station is:</p>
+                <p id="cur"></p>
+            </div>
+
+            <div class="nextStation">
+                 <p>Next Station is:</p>
+                 <p id="next"></p>
+            </div>
+        </div>
+        <div class="btn">
+            <button class="button_go"> GO </button>
+        </div>
+        <div class="direction">
+                <input type="radio" name="dir" value="toVienna" id="Prg-Vien">Prague-Vienna<br>
+                <input type="radio" name="dir" value="toPrague" id="Vien-Prg">Vienna-Prague<br>
+        </div>
+
+        <script src="bus.js"></script>
+        <script src="index.js"> </script>
+    </body>
+</html>

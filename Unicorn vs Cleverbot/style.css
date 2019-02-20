@@ -1,0 +1,32 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0 auto;
+}
+
+.divClev{   
+    width:20rem;
+    height:10rem;
+    padding: 2em;
+    background-color:grey;
+    text-align: center;
+    margin-left: 3em;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.divUni{
+    width:20rem;
+    height: 10em;
+    padding: 2em;
+    background-color: aqua;
+    text-align: center;
+    margin:0 auto;
+    border: 1px solid black;
+    border-radius: 15px;
+
+}
+

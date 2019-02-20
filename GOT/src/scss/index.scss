@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+body{
+    margin:0;
+    background-image: url('../img/got-bg.jpg');
+    background-size: cover;
+    min-height: 100vh;
+}  
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    color:white; 
+    padding: 2em;
+}
+.containertop{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.conteinerbottom{
+    padding: 2rem;  
+}
+
