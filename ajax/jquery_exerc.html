@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="articles">
+
+    </div>
+
+        <script>
+
+            $.ajax({
+                method: 'get', // get or post
+                url: 'https://classes.codingbootcamp.cz/assets/classes/602/guardian.php?cat=science',
+                success: function(data, status) {
+                    // function to run when the response returns
+                    console.log(data);
+                    data.data.channel.item.forEach(element => {
+                        $('#articles').append(`<h2>${element['title']}</h2>`);
+                        $('#text').append(`<p>${element['description']}</p>`); 
+                    });
+                }
+            });
+        </script>
+
+    </select>
+    
+</body>
+</html>
